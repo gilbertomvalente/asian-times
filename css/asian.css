@@ -1,0 +1,124 @@
+@charset "UTF-8";
+/* Formatação da página em geral */
+
+* {
+    margin: 0;
+    padding: 0;
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+p {
+    font-family: Verdana, Tahoma, sans-serif;
+    font-weight: bold;
+    text-align: left;
+}
+
+h1 {
+    margin-top: 1em;
+    font-size: 2.5em;
+}
+
+h2 {
+    margin-top: 1em;
+    font-size: 2em;
+}
+
+img {
+    margin: 10px;
+}
+
+/* Formatação do BODY e do CONTAINER */
+
+#cabecalho {
+    max-width: 1280px;
+    background-color: #000033;
+    margin: 0 auto;
+    color: #fff;
+    padding: 0;
+    height: 200px;
+}
+
+#container {
+    background-color: #feeff7;
+    margin: 0 auto;
+    max-width: 1440px;
+}
+
+/* Formatação do Menu */
+
+.menu {
+    display: flex;
+    width: 100%;
+    margin: 0 auto;
+}
+
+/* posiciona um elemento ao lado do outro e formata o botão */
+
+.menu li {
+    position: relative;
+    margin: 0 2px;
+    text-align: left;
+    list-style: none;
+    font-size: medium;
+    font-weight: 600;
+}
+
+/* Formata o link da opção */
+
+.menu li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 5px;
+    display: block;
+    transition: 1s;
+    background: #000033;
+}
+
+/* Aplica uma nova cor toda vez que o mouse passa sobre os links*/
+
+.menu li a:hover {
+    text-shadow: 0px 0px 5px #fff;
+    background-color: #007bd7;
+}
+
+/*  Formata o sub-menu */
+
+.menu li ul {
+    position: absolute;
+    top: 1.4em;
+    display: none;
+    z-index: 1;
+}
+
+.menu li ul li {
+    background: bisque;
+    width: 100px;
+}
+
+.menu li:hover ul {
+    display: block;
+}
+
+.menu li ul li a {
+    background: rgb(65, 36, 2);
+}
+
+.cat-link {
+    font-size: 0.5rem;
+    background-color: #007bd7;
+    color: #fff;
+    padding: 2px 8px 3px;
+}
+
+.cat-link-premium {
+    font-size: 0.5rem;
+    color: #fff;
+}
+
+.by {
+    font-size: .7rem;
+    color: #007bd7;
+    font-weight: bolder;
+    padding: 2px 8px 3px 0;
+}
