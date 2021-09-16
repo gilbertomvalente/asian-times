@@ -1,0 +1,414 @@
+@charset "UTF-8";
+/* Formatação da página em geral */
+
+* {
+	padding: 0;
+	max-width: 1440px;
+	margin: 0 auto;
+	text-decoration: none;
+	list-style: none;
+	font-family: "roboto", Helvetica, Verdana, Tahoma, sans-serif;
+	color: #111111;
+	font-size: 16px;
+}
+
+p {
+	font-weight: 300;
+	text-align: left;
+	font-size: 0.8rem;
+	color: #111111;
+	margin-top: 5px;
+}
+
+h1 {
+	margin-top: 1rem;
+	color: #111111;
+}
+
+h2 {
+	margin-top: 0.5rem;
+	font-weight: bolder;
+}
+
+h5 {
+	margin: 0.4rem 0;
+	font-weight: bold;
+}
+
+hr {
+	max-width: 90%;
+	border-top: 1px solid #8c8b8b;
+	padding: auto auto;
+}
+
+img {
+	width: 100%;
+	display: block;
+}
+form button {
+	background: #000033;
+	color: white;
+	font-size: 12px;
+	cursor: pointer;
+	border: none;
+}
+
+header {
+	background-color: #f5f5f5;
+	max-width: 100%;
+}
+
+/* Formatação do HEADER */
+
+#adblock {
+	display: block;
+	width: 40%;
+	margin: 20px auto;
+}
+
+#adblock-2 {
+	display: block;
+	width: 60%;
+	margin: 20px auto;
+}
+
+.cabecalho {
+	background: #000033;
+	max-width: 100%;
+}
+
+.cabecalho-logo {
+	width: 30%;
+	position: absolute;
+	margin-left: 10%;
+	padding-top: 1rem;
+}
+
+/* Formatação do Menu */
+
+.menu {
+	max-width: 80%;
+	display: flex;
+	justify-content: space-between;
+	padding-top: 6rem;
+	/*border: 5px solid white;*/
+}
+
+/* posiciona um elemento ao lado do outro e formata o botão */
+
+.menu li {
+	position: relative;
+	text-align: left;
+	font-size: medium;
+	font-weight: 600;
+}
+
+/* Formata o link da opção */
+
+.menu li a {
+	color: #fff;
+	padding: 5px;
+	display: block;
+	transition: 1s;
+	background: #000033;
+}
+
+/* Aplica uma nova cor toda vez que o mouse passa sobre os links*/
+
+.menu li a:hover {
+	text-shadow: 0px 0px 5px #fff;
+	background-color: #007bd7;
+}
+
+/*  Formata o sub-menu */
+
+.menu li ul {
+	position: absolute;
+	top: 1.4em;
+	display: none;
+	z-index: 1;
+}
+
+.menu li ul li {
+	width: 6rem;
+}
+
+.menu li:hover ul {
+	display: block;
+}
+
+.menu li ul li a {
+	background: #000033;
+}
+
+.fa {
+	font-size: 200%;
+	background-color: #000033;
+	color: #fff;
+	border-color: none;
+}
+
+/* Formatação do BODY e do MAIN */
+
+main {
+	margin: 0 auto;
+	width: 100%;
+}
+
+/* Formatação das SECTIONs */
+
+section,
+section-2,
+section-4 {
+	max-width: 80%;
+	margin: 0px auto;
+	display: grid;
+	grid-template-columns: 3fr 1fr;
+	/*	border: 2px solid black;*/
+}
+
+section-3 {
+	max-width: 80%;
+	margin: 0px auto;
+	display: grid;
+}
+
+section-5 {
+	max-width: 80%;
+	margin: 0px auto;
+	display: grid;
+	border: 2px solid orange;
+}
+
+/* Formatação das classes PRINCIPAL */
+
+.principal-1,
+.principal-2,
+.principal-3,
+.principal-4 {
+	display: grid;
+	padding: 1rem 0.5rem;
+	border: 2px solid blue;
+}
+
+.principal-5 {
+	border: 2px solid rgb(72, 255, 0);
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	padding: 1rem 0.5rem;
+	gap: 1rem;
+}
+
+/* Formatação das classes ASIDE */
+
+.aside-0 {
+	background-color: #e5e5e5;
+}
+
+.aside-1,
+.aside-2,
+.aside-4 {
+	margin: 1rem 0.5rem;
+	background-color: #fff;
+	border: 2px solid rgb(255, 0, 221);
+}
+
+/* Formatação das sub-classes PRINCIPAL */
+
+.principal-1-1 {
+	display: grid;
+	grid-template-columns: auto auto;
+	margin-top: 0.6rem;
+	gap: 1rem;
+}
+
+.principal-2-1,
+.principal-4-1 {
+	display: grid;
+	grid-template-columns: auto auto auto;
+	gap: 1rem;
+	padding: 1rem 0.5rem;
+}
+
+.principal-3-1 {
+	display: grid;
+	grid-template-columns: auto auto auto auto auto;
+	gap: 1rem;
+	padding: 1rem 0.5rem;
+}
+
+.principal-4-2 {
+	/*border: 2px solid blue;*/
+	display: grid;
+	grid-template-columns: auto auto auto;
+	margin-top: 0.6rem;
+	gap: 1rem;
+}
+
+.principal-4-3 {
+	display: grid;
+	grid-template-columns: 1fr 2fr;
+	margin-top: 0.6rem;
+	gap: 1rem;
+}
+
+.principal-4-4 {
+	display: grid;
+	grid-template-columns: auto auto auto auto;
+	margin-top: 0.6rem;
+	gap: 1rem;
+}
+
+.principal-1-1 img,
+.principal-4-1 img,
+.principal-5 img {
+	max-height: 15rem;
+}
+
+.principal-2 img {
+	height: 8rem;
+}
+
+.principal-3-1 img {
+	height: 80%;
+}
+
+/* Formatação das sub-classes ASIDE */
+
+.aside-1-1 {
+	display: grid;
+	grid-template-columns: auto auto;
+	gap: 1rem 0.7rem;
+	padding: 0.7rem 0;
+}
+
+.aside-2-1 {
+	margin: 0.4rem;
+}
+
+.aside-2-2 {
+	display: grid;
+	grid-template-columns: auto auto;
+	gap: 1rem;
+	padding: 1rem 0.5rem;
+}
+
+.aside-1-1 img {
+	width: 6.25rem;
+}
+
+/* Formatação das classes BANNER */
+
+.banner {
+	padding: 0.4rem 0;
+}
+
+.banner-2 {
+	max-width: 98%;
+}
+
+.banner-3 {
+	max-width: 70%;
+	margin: 2% auto;
+}
+
+.banner img {
+	padding: 0.5rem 0;
+}
+
+/* Formatação das classes CAT-LINK e BY */
+
+.cat-link {
+	font-size: 0.6rem;
+	font-weight: 500;
+	background-color: #007bd7;
+	color: #fff;
+	padding: 3px 8px;
+}
+
+.by {
+	font-size: 0.7rem;
+	color: #007bd7;
+	font-weight: bold;
+	padding: 2px 8px 3px 0;
+}
+
+/* Formatação das classes SUB-TITLE */
+
+.sub-title {
+	border: 2px solid red;
+	margin: 0.5rem;
+}
+.sub-title hr {
+	border-top: 4px solid blue;
+	width: 2rem;
+	margin-left: 0%;
+	margin-top: 0.2rem;
+}
+
+hr.style1 {
+	border-top: 1px solid #8c8b8b;
+	width: 80%;
+}
+
+.item-2 {
+	display: grid;
+	grid-template-columns: auto auto;
+}
+
+/* Formatação do FOOTER */
+
+footer {
+	max-width: 100%;
+	margin: 1rem auto;
+	padding: 0% 10%;
+	background: #000033;
+	display: grid;
+	grid-template-columns: 4fr 1fr;
+	border: 5px solid red;
+}
+
+.footer-left {
+	border: 5px solid green;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+}
+
+.footer-right {
+	border: 5px solid blue;
+	display: flex;
+}
+
+.footer-left nav {
+	margin: 0;
+}
+
+.footer-up {
+	display: flex;
+	justify-content: start;
+	border: 5px solid blueviolet;
+}
+
+.footer-down {
+	display: flex;
+	justify-content: start;
+	border: 5px solid yellow;
+}
+
+footer li,
+footer a {
+	color: #fff;
+	margin-left: 0px;
+	font-size: 0.75rem;
+}
+
+.footer-left li {
+	margin-right: 1rem;
+}
+
+.footer-right i {
+	color: #fff;
+	font-size: 1.5rem;
+	margin: 1rem;
+}
