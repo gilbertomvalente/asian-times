@@ -1,6 +1,36 @@
 @charset "UTF-8";
 /* Formatação da página em geral */
 
+:root {
+	--primary: #007bff;
+	--black: #111;
+	--info: #17a2b8;
+	--teal: #20c997;
+	--success: #28a745;
+	--gray-dark: #343a40;
+	--indigo: #6610f2;
+	--secondary: #6c757d;
+	--purple: #6f42c1;
+	--danger: #dc3545;
+	--pink: #e83e8c;
+	--white-bg: #eee;
+	--light: #f8f9fa;
+	--orange: #fd7e14;
+	--warning: #ffc107;
+	--white: #fff;
+
+	--breakpoint-xs: 0;
+	--breakpoint-sm: 576px;
+	--breakpoint-md: 768px;
+	--breakpoint-lg: 992px;
+	--breakpoint-xl: 1200px;
+	--font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI",
+		Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif,
+		"Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+	--font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas,
+		"Liberation Mono", "Courier New", monospace;
+}
+
 * {
 	padding: 0;
 	max-width: 1440px;
@@ -8,7 +38,7 @@
 	text-decoration: none;
 	list-style: none;
 	font-family: "roboto", Helvetica, Verdana, Tahoma, sans-serif;
-	color: #111111;
+	color: var(--black);
 	font-size: 16px;
 }
 
@@ -16,13 +46,13 @@ p {
 	font-weight: 300;
 	text-align: left;
 	font-size: 0.8rem;
-	color: #111111;
+	color: var(--black);
 	margin-top: 5px;
 }
 
 h1 {
 	margin-top: 1rem;
-	color: #111111;
+	color: var(--black);
 }
 
 h2 {
@@ -60,10 +90,14 @@ header {
 
 /* Formatação do HEADER */
 
+.adblock-top {
+	background-color: var(--white-bg);
+}
+
 #adblock {
 	display: block;
 	width: 40%;
-	margin: 20px auto;
+	margin: 0.5rem auto;
 }
 
 #adblock-2 {
@@ -75,22 +109,46 @@ header {
 .cabecalho {
 	background: #000033;
 	max-width: 100%;
+	display: flex;
+	flex-direction: column;
+	border: 2px solid white;
 }
 
 .cabecalho-logo {
 	width: 30%;
-	position: absolute;
 	margin-left: 10%;
-	padding-top: 1rem;
+	padding: 20px 0 10px;
+	/*border: 2px solid yellow;*/
+}
+
+.cabecalho-logo img {
+	max-width: 90%;
+}
+
+#separator {
+	border-top: 0.1px solid #8c8b8b;
+	width: 100%;
 }
 
 /* Formatação do Menu */
 
-.menu {
-	max-width: 80%;
+nav {
+	/*border: 2px solid yellow;*/
+	margin: auto 10%;
 	display: flex;
 	justify-content: space-between;
-	padding-top: 6rem;
+}
+
+.menu {
+	display: flex;
+	justify-content: space-between;
+	margin: 0.2rem 0.5rem;
+	/*border: 5px solid white;*/
+}
+
+form {
+	font-size: 1rem;
+	margin: 0.3rem 0.5rem;
 	/*border: 5px solid white;*/
 }
 
@@ -98,16 +156,14 @@ header {
 
 .menu li {
 	position: relative;
+	margin: 0.2rem 0.7rem;
 	text-align: left;
-	font-size: medium;
-	font-weight: 600;
 }
 
 /* Formata o link da opção */
 
 .menu li a {
 	color: #fff;
-	padding: 5px;
 	display: block;
 	transition: 1s;
 	background: #000033;
@@ -139,6 +195,10 @@ header {
 
 .menu li ul li a {
 	background: #000033;
+}
+
+.menu li a i {
+	color: #fff;
 }
 
 .fa {
