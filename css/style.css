@@ -2,6 +2,7 @@
 /* Formatação da página em geral */
 
 :root {
+	--black-hd: #00162d;
 	--primary: #007bff;
 	--black: #111;
 	--info: #17a2b8;
@@ -11,10 +12,13 @@
 	--indigo: #6610f2;
 	--secondary: #6c757d;
 	--purple: #6f42c1;
+	--gray-hr: #8c8b8b;
 	--danger: #dc3545;
 	--pink: #e83e8c;
+	--gray-bg: #e3e3e3;
 	--white-bg: #eee;
 	--light: #f8f9fa;
+	--white-bg: #f5f5f5;
 	--orange: #fd7e14;
 	--warning: #ffc107;
 	--white: #fff;
@@ -67,7 +71,7 @@ h5 {
 
 hr {
 	max-width: 90%;
-	border-top: 1px solid #8c8b8b;
+	border-top: 1px solid var(--gray-bg);
 	padding: auto auto;
 }
 
@@ -76,7 +80,7 @@ img {
 	display: block;
 }
 form button {
-	background: #000033;
+	background: var(--black-hd);
 	color: white;
 	font-size: 12px;
 	cursor: pointer;
@@ -84,7 +88,7 @@ form button {
 }
 
 header {
-	background-color: #f5f5f5;
+	background-color: var(--white-bg);
 	max-width: 100%;
 }
 
@@ -107,11 +111,11 @@ header {
 }
 
 .cabecalho {
-	background: #000033;
+	background: var(--black-hd);
 	max-width: 100%;
 	display: flex;
 	flex-direction: column;
-	border: 2px solid white;
+	/*border: 2px solid white;*/
 }
 
 .cabecalho-logo {
@@ -126,7 +130,7 @@ header {
 }
 
 #separator {
-	border-top: 0.1px solid #8c8b8b;
+	border-top: 0.1px solid var(--gray-hr);
 	width: 100%;
 }
 
@@ -134,7 +138,7 @@ header {
 
 nav {
 	/*border: 2px solid yellow;*/
-	margin: auto 10%;
+	margin: auto 8%;
 	display: flex;
 	justify-content: space-between;
 }
@@ -163,17 +167,17 @@ form {
 /* Formata o link da opção */
 
 .menu li a {
-	color: #fff;
+	color: var(--white);
 	display: block;
 	transition: 1s;
-	background: #000033;
+	background: var(--black-hd);
 }
 
 /* Aplica uma nova cor toda vez que o mouse passa sobre os links*/
 
 .menu li a:hover {
-	text-shadow: 0px 0px 5px #fff;
-	background-color: #007bd7;
+	text-shadow: 0px 0px 5px var(--white);
+	background-color: var(--primary);
 }
 
 /*  Formata o sub-menu */
@@ -194,17 +198,17 @@ form {
 }
 
 .menu li ul li a {
-	background: #000033;
+	background: var(--black-hd);
 }
 
 .menu li a i {
-	color: #fff;
+	color: var(--white);
 }
 
 .fa {
 	font-size: 200%;
-	background-color: #000033;
-	color: #fff;
+	background: var(--black-hd);
+	color: var(--white);
 	border-color: none;
 }
 
@@ -220,24 +224,25 @@ main {
 section,
 section-2,
 section-4 {
-	max-width: 80%;
-	margin: 0px auto;
+	max-width: 83%;
+	margin: 0rem auto;
 	display: grid;
-	grid-template-columns: 3fr 1fr;
+	grid-template-columns: 66% 34%;
+	gap: 1rem;
 	/*	border: 2px solid black;*/
 }
 
 section-3 {
-	max-width: 80%;
+	max-width: 83%;
 	margin: 0px auto;
 	display: grid;
 }
 
 section-5 {
-	max-width: 80%;
+	max-width: 83%;
 	margin: 0px auto;
 	display: grid;
-	border: 2px solid orange;
+	/*border: 2px solid orange;*/
 }
 
 /* Formatação das classes PRINCIPAL */
@@ -247,30 +252,31 @@ section-5 {
 .principal-3,
 .principal-4 {
 	display: grid;
-	padding: 1rem 0.5rem;
-	border: 2px solid blue;
+	margin: 1rem 0.5rem;
+	/*border: 2px solid blue;*/
 }
 
 .principal-5 {
-	border: 2px solid rgb(72, 255, 0);
+	/*border: 2px solid rgb(72, 255, 0);*/
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr 1fr;
-	padding: 1rem 0.5rem;
+	padding: 0.5rem;
 	gap: 1rem;
 }
 
 /* Formatação das classes ASIDE */
 
 .aside-0 {
-	background-color: #e5e5e5;
+	background-color: var(--gray-bg);
+	padding: 1rem 3rem;
 }
 
 .aside-1,
 .aside-2,
 .aside-4 {
 	margin: 1rem 0.5rem;
-	background-color: #fff;
-	border: 2px solid rgb(255, 0, 221);
+	background-color: var(--white);
+	/*border: 2px solid rgb(255, 0, 221);*/
 }
 
 /* Formatação das sub-classes PRINCIPAL */
@@ -279,7 +285,7 @@ section-5 {
 	display: grid;
 	grid-template-columns: auto auto;
 	margin-top: 0.6rem;
-	gap: 1rem;
+	gap: .5rem 2rem;
 }
 
 .principal-2-1,
@@ -381,14 +387,14 @@ section-5 {
 .cat-link {
 	font-size: 0.6rem;
 	font-weight: 500;
-	background-color: #007bd7;
-	color: #fff;
+	background-color: var(--primary);
+	color: var(--white);
 	padding: 3px 8px;
 }
 
 .by {
 	font-size: 0.7rem;
-	color: #007bd7;
+	color: var(--primary);
 	font-weight: bold;
 	padding: 2px 8px 3px 0;
 }
@@ -396,19 +402,18 @@ section-5 {
 /* Formatação das classes SUB-TITLE */
 
 .sub-title {
-	border: 2px solid red;
-	margin: 0.5rem;
+	/*border: 2px solid red;*/
+	margin: 0 0.5rem;
 }
 .sub-title hr {
-	border-top: 4px solid blue;
+	border-top: 4px solid var(--primary);
 	width: 2rem;
 	margin-left: 0%;
 	margin-top: 0.2rem;
 }
 
-hr.style1 {
-	border-top: 1px solid #8c8b8b;
-	width: 80%;
+.principal-5 hr {
+	margin: 1rem 0;
 }
 
 .item-2 {
@@ -420,23 +425,24 @@ hr.style1 {
 
 footer {
 	max-width: 100%;
-	margin: 1rem auto;
-	padding: 0% 10%;
-	background: #000033;
+	margin: 0rem auto;
+	padding: 1% 8%;
+	background: var(--black-hd);
 	display: grid;
 	grid-template-columns: 4fr 1fr;
-	border: 5px solid red;
+	/*border: 5px solid red;*/
 }
 
 .footer-left {
-	border: 5px solid green;
+/*	border: 5px solid green;*/
 	display: flex;
 	flex-direction: column;
 	justify-content: space-around;
+	margin-left: 0%;
 }
 
 .footer-right {
-	border: 5px solid blue;
+/*	border: 5px solid blue;*/
 	display: flex;
 }
 
@@ -446,19 +452,17 @@ footer {
 
 .footer-up {
 	display: flex;
-	justify-content: start;
-	border: 5px solid blueviolet;
+	margin-left: 0%;
 }
 
 .footer-down {
 	display: flex;
 	justify-content: start;
-	border: 5px solid yellow;
 }
 
 footer li,
 footer a {
-	color: #fff;
+	color: var(--white);
 	margin-left: 0px;
 	font-size: 0.75rem;
 }
@@ -468,7 +472,7 @@ footer a {
 }
 
 .footer-right i {
-	color: #fff;
+	color: var(--white);
 	font-size: 1.5rem;
 	margin: 1rem;
 }
