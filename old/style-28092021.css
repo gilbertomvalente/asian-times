@@ -418,15 +418,15 @@ footer {
 }
 
 .footer-left {
-	border: 5px solid green;
+	/*	border: 5px solid green;*/
 	display: flex;
 	flex-direction: column;
-	justify-content: space-between;
-	margin: 0%;
+	justify-content: space-around;
+	margin-left: 0%;
 }
 
 .footer-right {
-	border: 5px solid blue;
+	/*	border: 5px solid blue;*/
 	display: flex;
 }
 
@@ -441,7 +441,7 @@ footer {
 
 .footer-down {
 	display: flex;
-	margin-left: 0%;
+	justify-content: start;
 }
 
 footer li,
@@ -469,6 +469,10 @@ footer a {
 
 /* Large devices (laptops/desktops, 1200px and smaller) */
 @media (max-width: 1200px) {
+}
+
+/* Medium devices (landscape tablets, 992px and smaller) */
+@media (max-width: 992px) {
 	section,
 	section-2,
 	section-4 {
@@ -498,17 +502,24 @@ footer a {
 	footer {
 		display: block;
 		position: relative;
+		padding: 1%;
+
+		/*border: 5px solid red;*/
 	}
 
 	.footer-left {
+		display: flex;
 		flex-direction: row;
+
+		/*	border: 5px solid green;*/
 	}
 
 	.footer-right {
+		/*	border: 5px solid blue;*/
 		display: block;
 		position: absolute;
 		bottom: 1rem;
-		right: 15%;
+		right: 25%;
 	}
 
 	.footer-up {
@@ -522,7 +533,12 @@ footer a {
 
 	footer li,
 	footer a {
+		color: var(--white);
 		margin: 0.8rem 0;
+		font-size: 0.8rem;
+	}
+
+	.footer-right li {
 	}
 
 	.footer-right i {
@@ -530,65 +546,8 @@ footer a {
 	}
 }
 
-/* Medium devices (landscape tablets, 992px and smaller) */
-@media (max-width: 992px) {
-	.principal-1-1,
-	.principal-2-1,
-	.principal-3-1,
-	.principal-4-1,
-	.principal-4-4,
-	.principal-5 {
-		grid-template-columns: 1fr;
-	}
-
-	.aside-1,
-	.aside-2,
-	.aside-4 {
-		grid-template-columns: 1fr;
-	}
-
-	footer {
-		padding: 1% 8%;
-	}
-
-	.footer-right {
-		right: 20%;
-	}
-}
-
 /* Small devices (portrait tablets and large phones, 768px and smaller */
 @media (max-width: 768px) {
-	.principal-2-1,
-	.principal-3-1,
-	.principal-4-1,
-	.principal-4-4,
-	.principal-5 {
-		grid-template-columns: 1fr;
-	}
-
-	/* Formatação do FOOTER */
-
-	footer {
-		display: block;
-		/*border: 5px solid red;*/
-	}
-
-	.footer-left {
-		border: 5px solid green;
-		flex-direction: column;
-		margin-left: 2%;
-	}
-
-	.footer-right {
-		border: 5px solid blue;
-		display: flex;
-		position: initial;
-		justify-content: space-around;
-	}
-
-	.footer-right i {
-		margin: 0;
-	}
 }
 
 /* Extra small devices (phones, 600px and down) */
