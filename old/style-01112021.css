@@ -110,7 +110,7 @@ header {
 	margin: 20px auto;
 }
 
-.top-page {
+.cabecalho {
 	background: var(--black-hd);
 	max-width: 100%;
 	display: flex;
@@ -118,14 +118,14 @@ header {
 	/*border: 2px solid white;*/
 }
 
-.top-page-logo {
+.cabecalho-logo {
 	width: 30%;
 	margin-left: 10%;
 	padding: 20px 0 10px;
-	/*border: 2px solid white;*/
+	/*border: 2px solid yellow;*/
 }
 
-.top-page-logo img {
+.cabecalho-logo img {
 	max-width: 90%;
 }
 
@@ -136,41 +136,29 @@ header {
 
 /* Formatação do Menu */
 
-.top-menu {
-	/*border: 2px solid white;*/
+nav {
+	/*border: 2px solid yellow;*/
+	margin: auto 8%;
 	display: flex;
 	justify-content: space-between;
-	margin: auto 8%;
-}
-
-.hamburger {
-	/*border: 2px solid white;*/
-	order: 1;
-	margin: 0;
 }
 
 .menu {
-	max-width: 100%;
-	margin: 0;
-}
-
-.menu ul {
 	display: flex;
-	flex-wrap: wrap;
+	justify-content: space-between;
 	margin: 0.2rem 0.5rem;
-	/*border: 2px solid white;*/
+	/*border: 5px solid white;*/
 }
 
 form {
 	font-size: 1rem;
 	margin: 0.3rem 0.5rem;
-	/*border: 2px solid white;*/
-	order: 2;
+	/*border: 5px solid white;*/
 }
 
 /* posiciona um elemento ao lado do outro e formata o botão */
 
-.menu ul li {
+.menu li {
 	position: relative;
 	margin: 0.2rem 0.7rem;
 	text-align: left;
@@ -178,7 +166,7 @@ form {
 
 /* Formata o link da opção */
 
-.menu ul li a {
+.menu li a {
 	color: var(--white);
 	display: block;
 	transition: 1s;
@@ -187,14 +175,14 @@ form {
 
 /* Aplica uma nova cor toda vez que o mouse passa sobre os links*/
 
-.menu ul li a:hover {
+.menu li a:hover {
 	text-shadow: 0px 0px 5px var(--white);
 	background-color: var(--primary);
 }
 
 /*  Formata o sub-menu */
 
-.menu ul li ul {
+.menu li ul {
 	position: absolute;
 	top: 1.4em;
 	display: none;
@@ -202,19 +190,19 @@ form {
 	background: var(--black-hd);
 }
 
-.menu ul li ul li {
+.menu li ul li {
 	width: 6rem;
 }
 
-.menu ul li:hover ul {
+.menu li:hover ul {
 	display: block;
 }
 
-.menu ul li ul li a {
+.menu li ul li a {
 	background: var(--black-hd);
 }
 
-.menu ul li a i {
+.menu li a i {
 	color: var(--white);
 }
 
@@ -242,21 +230,21 @@ section-4 {
 	display: grid;
 	grid-template-columns: 66% 34%;
 	gap: 1rem;
-	/*border: 2px solid white;*/
+	border: 2px solid black;
 }
 
 section-3 {
 	max-width: 83%;
 	margin: 0px auto;
 	display: grid;
-	/*border: 2px solid white;*/
+	border: 2px solid black;
 }
 
 section-5 {
 	max-width: 83%;
 	margin: 0px auto;
 	display: grid;
-	/*border: 2px solid white;*/
+	border: 2px solid black;
 }
 
 /* Formatação das classes PRINCIPAL */
@@ -266,7 +254,7 @@ section-5 {
 .principal-3,
 .principal-4 {
 	margin: 1rem 0.5rem;
-	/*border: 2px solid white;*/
+	border: 2px solid black;
 }
 
 .principal-5 {
@@ -275,7 +263,7 @@ section-5 {
 	grid-template-columns: 1fr 1fr 1fr 1fr;
 	padding: 0.5rem;
 	gap: 1rem;
-	/*border: 2px solid white;*/
+	border: 2px solid black;
 }
 
 /* Formatação das classes ASIDE */
@@ -283,7 +271,7 @@ section-5 {
 .aside-0 {
 	background-color: var(--gray-bg);
 	padding: 1rem 1rem;
-	/*border: 2px solid white;*/
+	border: 2px solid black;
 }
 
 .aside-1,
@@ -291,7 +279,7 @@ section-5 {
 .aside-4 {
 	margin: 1rem 0.5rem;
 	background-color: var(--white);
-	/*border: 2px solid white;*/
+	border: 2px solid black;
 }
 
 /* Formatação das sub-classes PRINCIPAL */
@@ -319,7 +307,7 @@ section-5 {
 }
 
 .principal-4-2 {
-	/*border: 2px solid white;*/
+	/*border: 2px solid blue;*/
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr;
 	gap: 1rem;
@@ -431,7 +419,7 @@ footer {
 }
 
 .footer-left {
-	/*border: 2px solid white;*/
+	border: 5px solid green;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
@@ -439,7 +427,7 @@ footer {
 }
 
 .footer-right {
-	/*border: 2px solid white;*/
+	border: 5px solid blue;
 	display: flex;
 }
 
@@ -545,8 +533,6 @@ footer a {
 
 /* Medium devices (landscape tablets, 992px and smaller) */
 @media (max-width: 992px) {
-	/* Formatação do MAIN */
-
 	.principal-1-1,
 	.principal-2-1,
 	.principal-3-1,
@@ -561,7 +547,6 @@ footer a {
 	.aside-4 {
 		grid-template-columns: 1fr;
 	}
-	/* Formatação do FOOTER */
 
 	footer {
 		padding: 1% 8%;
@@ -569,85 +554,6 @@ footer a {
 
 	.footer-right {
 		right: 20%;
-	}
-	/* Formatação do HEADER */
-	/* Formatação do MENU HAMBURGER */
-
-	.hamburger {
-		display: block;
-		order: 3;
-	}
-
-	.bar {
-		display: block;
-		width: 1.56rem;
-		height: 3px;
-		margin: 5px auto;
-		-webkit-transition: all 0.3s ease-in-out;
-		transition: all 0.3s ease-in-out;
-		background-color: white;
-	}
-	.hamburger.active .bar:nth-child(2) {
-		opacity: 0;
-	}
-
-	.hamburger.active .bar:nth-child(1) {
-		transform: translateY(8px) rotate(45deg);
-	}
-
-	.hamburger.active .bar:nth-child(3) {
-		transform: translateY(-8px) rotate(-45deg);
-	}
-
-	/* Formatação do MENU */
-
-	.top-page {
-		flex-direction: row;
-		justify-content: space-between;
-	}
-
-	#separator {
-		display: none;
-	}
-
-	.top-page-logo {
-		margin: 0 0 0 10%;
-	}
-
-	.top-menu {
-		width: 60%;
-		flex-wrap: wrap;
-		margin-top: 2%;
-	}
-
-	.menu {
-		display: none;
-		order: 3;
-	}
-
-	.search {
-		order: 1;
-	}
-
-	.menu.active {
-		display: block;
-		width: 70%;
-		margin: auto 8%;
-		order: 2;
-	}
-
-	.menu ul {
-		flex-direction: column;
-		flex-wrap: nowrap;
-	}
-
-	.menu ul li ul {
-		top: 0em;
-		left: 5rem;
-	}
-
-	.menu ul li ul li {
-		width: 10rem;
 	}
 }
 
@@ -669,13 +575,13 @@ footer a {
 	}
 
 	.footer-left {
-		/*border: 5px solid red;*/
+		border: 5px solid green;
 		flex-direction: column;
 		margin-left: 2%;
 	}
 
 	.footer-right {
-		/*border: 5px solid red;*/
+		border: 5px solid blue;
 		display: flex;
 		position: initial;
 		justify-content: space-around;

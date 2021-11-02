@@ -647,8 +647,9 @@ footer a {
 	}
 
 	.menu ul li ul li {
-		width: 10rem;
-	}
+	width: 10rem;
+}
+
 }
 
 /* Small devices (portrait tablets and large phones, 768px and smaller */
@@ -669,13 +670,13 @@ footer a {
 	}
 
 	.footer-left {
-		/*border: 5px solid red;*/
+		border: 5px solid green;
 		flex-direction: column;
 		margin-left: 2%;
 	}
 
 	.footer-right {
-		/*border: 5px solid red;*/
+		border: 5px solid blue;
 		display: flex;
 		position: initial;
 		justify-content: space-around;
