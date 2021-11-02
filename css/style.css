@@ -145,7 +145,7 @@ header {
 
 .hamburger {
 	/*border: 2px solid white;*/
-	order: 1;
+	/*order: 1;*/
 	margin: 0;
 }
 
@@ -615,8 +615,9 @@ footer a {
 	}
 
 	.top-menu {
-		width: 60%;
+		width: 40%;
 		flex-wrap: wrap;
+		margin: 0 auto;
 		margin-top: 2%;
 	}
 
@@ -631,7 +632,6 @@ footer a {
 
 	.menu.active {
 		display: block;
-		width: 70%;
 		margin: auto 8%;
 		order: 2;
 	}
@@ -647,7 +647,7 @@ footer a {
 	}
 
 	.menu ul li ul li {
-		width: 10rem;
+		width: 5rem;
 	}
 }
 
@@ -684,8 +684,21 @@ footer a {
 	.footer-right i {
 		margin: 0;
 	}
+
+	.search {
+		display: none;
+	}
+
+	.top-menu {
+		justify-content: right;
+	}
 }
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 599.98px) {
+
+		.top-menu {
+		flex-wrap: nowrap;
+	}
+
 }
